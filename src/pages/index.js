@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import React from 'react';
+import React, { useEffect } from 'react';
 import { jsx } from '@emotion/core';
 import { Link, graphql } from 'gatsby';
 
@@ -28,6 +28,13 @@ const BlogPostSummary = ({ node }) => {
 export default ({ data, location }) => {
     const siteTitle = data.site.siteMetadata.title;
     const posts = data.allMarkdownRemark.edges;
+
+    useEffect(() => {
+        console.log(
+            '%cbonjour habibi ✨',
+            'font-family: cursive; color: violet; font-size: 2rem;'
+        );
+    }, []);
 
     return (
         <Layout location={location} title={siteTitle}>
