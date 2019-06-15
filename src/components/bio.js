@@ -59,12 +59,12 @@ export default () => (
                         flex: 1;
                     `}
                 >
-                    <h4 css={typography.h4}>
+                    <h2 css={typography.h4}>
                         Hey there!{' '}
                         <span role="img" aria-label="Waving Hand">
                             👋
                         </span>
-                    </h4>
+                    </h2>
                     <p css={typography.content}>
                         I'm a software engineer based in San Francisco. I'm
                         currently working on frontend infrastructure at{' '}
