@@ -24,7 +24,12 @@ const socialMediaData = [
 const SocialMediaLinks = ({ data }) => (
     <ul>
         {data.map(({ name, href }) => (
-            <li key={name}>
+            <li
+                key={name}
+                css={css`
+                    margin-bottom: ${bs(0.25)};
+                `}
+            >
                 <a href={href}>{name}</a>
             </li>
         ))}
